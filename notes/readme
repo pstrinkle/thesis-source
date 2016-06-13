@@ -1,0 +1,17 @@
+
+sudo easy_install scipy <-- failed as a lack of fortran.
+
+: (
+maybe need a proper list of what was required to do my work... i keep all the
+manually downloaded archives.
+
+Needed to install gfortran for max os x lion.
+
+installed scipy 0.10
+
+ <-- regex to double leading whitespace.
+^( +)
+\1\1
+
+import py_compile
+py_compile.compile("script.py")

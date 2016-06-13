@@ -1,0 +1,46 @@
+
+The goal is to use filter_tweets.py to get a user list for tweet_statuses.py.  The output for tweet_statuses.py 
+should be collated and then pushed back up into the master database.
+
+tweet_statuses.py -> collate_friends.py & collate_tweets.py -> merge_tweets.py -> compile_tweet_db.py
+
+Applications:
+	tweet_public.py - regularly pulls public timeline
+	tweet_statuses.py - given a list of users, output their friends and their last 200 tweets
+	tweet_users.py - given a list of users, output their friends
+
+	collate_friends.py - Merges _friends.txt lists (output from tweet_statuses.py)
+	collate_tweets.py - Merges raw tweet xml lists (output from tweet_statuses.py)
+	merge_tweets.py - merges raw tweet xml files, several files.
+
+	compile_tweet_db.py - Builds master database xml file from raw tweet and raw friend xml (collated output)
+	filter_tweets.py - Filters a master database xml file for different queries (not finished)
+
+	make_csv.pl - takes a raw tweet xml list and builds a csv file
+
+	sort_filter.py - given a master list, remove matching lines from a removal list.
+
+	tweets2lda.py - given a raw tweet xml file, build input for the LDA-C code
+	langmodel.py - Builds a basic language model for a given series of tweets (not finished)
+	ngrams.py - This tries to build a 3-gram level histogram (sketch) for each day's tweets.
+	ngrams_sw_tfidf.py - This tries to build a 3-gram level histogram (sketch) for each day's tweets, sliding window.
+	ngrams_tfidf.py - This tries to build a 3-gram level histogram (sketch) for each day's tweets, and calculates the tf-idf values.
+	words.py - This tries to build a word level histogram (sketch) for each day's tweets. OR This tries to build a word level histogram (sketch) for each hour's tweets.
+
+Modules:
+	Geo.py - code for calculating geographic information
+	LanguageModel.py - code for building and interacting with language models
+	TweetClean.py - code for cleaning tweet text, removing usernames, etc
+	TweetDate.py - code for handling the date-time post format used by Twitter
+	TweetXml.py - code for building unicode (utf-8) xml strings from Twitter data
+	TweetDatabase.py - code for loading and dumping the TwitterUsers database
+	VectorSpace.py - code for building and interacting with vector space models
+
+Likely out of date:
+	make_csv.pl
+
+TwitterUser class used in:
+	collate_friends.py
+	collate_tweets.py
+	compile_tweet_db.py
+	filter_tweets.py

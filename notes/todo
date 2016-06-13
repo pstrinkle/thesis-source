@@ -1,0 +1,28 @@
+
+
+1/17-2/17:
+0 - Develop tf-idf clustering library.
+
+2/18 - 2/20:
+1 - Get Gensim's LDA working with my data.
+  a - Get some results from this and compare them with my tf-idf approach.
+
+2/21 - 2/24:
+2 - Get multi-threading working with auto_pull_label
+  a - Re-run.
+
+3 - Add singleton removal as an option to words, cluster_words, and auto_pull_label
+  a - Compare these results with the alternative.  I have a hunch they won't be as good, because tweets singletons might be valuable.
+
+XXX - XXX:
+4 - Are numbers really data for me?
+
+5 - Determine what needs to be done to build a time-series basic model in a framework.
+  a - Tweets in close time proximity are more likely to have the same or related topic?
+  b - Tweets in close physical proximity may not be, if you're @home or @work.
+    i - Can determine a few places of "data at rest." and can use this in analysis per user.
+  c - Some model that isn't really overly user specific.
+
+6 - Write paper from these results.
+
+7 - Complicate model.

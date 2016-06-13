@@ -1,0 +1,5 @@
+called second
+./lda inf inf-settings.txt tmp/100 tmp/word-assignments.dat "ugh"
+
+called first
+./lda est 0.85 200 settings.txt /Users/pstrink/DissertRes/Imported_Experimental_Code/Blei-LDA/ap/ap.dat random tmp
